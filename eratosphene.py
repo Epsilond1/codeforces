@@ -23,4 +23,4 @@ while index <= math.sqrt(len(arrays)) + 1:
 
 for element in arrays:
     if element.flag == True:
-        print("{0}".format(element.value))
+        print(element.value, sep=' ')
