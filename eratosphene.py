@@ -13,6 +13,9 @@ arrays = [Sieve(x) for x in range(2, count+1)]
 index = 0
 step = 1
 while index <= math.sqrt(len(arrays)) + 1:
+    if arrays[index].flag == False:
+        index += 1
+        continue
     iterator = index + step
     while iterator < len(arrays):
         if arrays[iterator].value % arrays[index].value == 0:
@@ -23,4 +26,4 @@ while index <= math.sqrt(len(arrays)) + 1:
 
 for element in arrays:
     if element.flag == True:
-        print(element.value, sep=' ')
+        print(element.value)
