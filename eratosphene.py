@@ -6,7 +6,6 @@ class Sieve(object):
         self.value = value
         self.flag = True
 
-
 count = int(input())
 arrays = [Sieve(x) for x in range(2, count+1)]
 
